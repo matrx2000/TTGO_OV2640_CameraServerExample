@@ -3,9 +3,12 @@
 #include <OneButton.h>
 #include "freertos/event_groups.h"
 #include <Wire.h>
-#include <Adafruit_BME280.h>
+#include <WiFiClientSecure.h>
+//#include <Adafruit_BME280.h>
 #include "esp_camera.h"
 #include "esp_wifi.h"
+#include <SPI.h>
+//#include <Adafruit_Sensor.h>
 /***************************************
  *  Board select
  **************************************/
@@ -38,8 +41,8 @@
 /***************************************
  *  WiFi
  **************************************/
-#define WIFI_SSID   "your wifi ssid"
-#define WIFI_PASSWD "you wifi password"
+#define WIFI_SSID   "MyWebCAM"
+#define WIFI_PASSWD "12345678"
 
 /***************************************
  *  PinOUT
